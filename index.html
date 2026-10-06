@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abiba | Web Developer & Designer</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-chart-line"></i> Abiba
+        </div>
+        
+        <nav class="navbar" id="myNavbar">
+            <a href="#home" class="active" onclick="closeMenu()">Home</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+            <a href="#contact" class="btn-nav" onclick="closeMenu()">Let's Talk</a>
+        </nav>
+
+        <!-- Inline onclick added here for reliability -->
+        <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <span class="greeting">👋 Hello, I'm</span>
+                <h1>Abiba</h1>
+                <h2>Web Developer & UI/UX Designer</h2>
+                <p>I build modern, responsive, and user-friendly digital experiences. Let's turn your ideas into reality with clean code and beautiful design.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="IMG-20260301-WA0015.jpg" alt="Abiba - Web Developer">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate developer based in Lagos, Nigeria, specializing in creating clean, efficient, and scalable web applications. With a strong foundation in both design and development, I bridge the gap between aesthetics and functionality.</p>
+                    <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or sharing my knowledge with the tech community.</p>
+                    <div class="skills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>UI/UX Design</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section">
+            <div class="section-title">
+                <h2>What I Do</h2>
+                <p>My core services</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building fast, responsive, and secure websites tailored to your business needs.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and visually appealing interfaces that users love to interact with.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Ensuring your website looks and works perfectly on all devices, from phones to desktops.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+            <div class="section-title">
+                <h2>Recent Work</h2>
+                <p>Some of my latest projects</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <img src="e commerce.jpg" alt="Project 1">
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Web Development</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="UI.jpg" alt="Project 2">
+                    <div class="portfolio-info">
+                        <h3>Finance Dashboard</h3>
+                        <p>UI/UX Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="app.jpg" alt="Project 3">
+                    <div class="portfolio-info">
+                        <h3>Travel Booking App</h3>
+                        <p>Mobile App</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>I'd love to hear from you! Feel free to reach out.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info-wrapper">
+                    <div class="contact-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>abibasumaila100@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="info-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="info-text">
+                            <h4>Phone</h4>
+                            <p>+233 055 723 9955</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-text">
+                            <h4>Location</h4>
+                            <p>Kumais, Ghana</p>
+                        </div>
+                    </div>
+                </div>
+
+              <div class="contact-form-wrapper">
+    <!-- UPDATED FORM WITH WEB3FORMS -->
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        
+        <!-- 🔑 PASTE YOUR ACCESS KEY HERE -->
+        <input type="hidden" name="access_key" value="e278f06f-514b-4773-ab3d-d7e7e9032bdc">
+        
+        <!-- This makes the email look professional -->
+        <input type="hidden" name="subject" value="New Message from Your Portfolio">
+        <input type="hidden" name="from_name" value="Abiba Portfolio Website">
+        
+        <!-- Anti-spam honeypot (leave empty) -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-comment-dots"></i>
+            <textarea name="message" placeholder="Write your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> <span>Send Message</span>
+        </button>
+    </form>
+</div>
+                        
+
+            <div class="social-section">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/feed/" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.tiktok.com/@abiba.sumaila3?is_from_webapp=1&sender_device=pc" class="tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Abiba. All rights reserved.</p>
+    </footer>
+
+    <!-- INLINE JAVASCRIPT: Guaranteed to work -->
+    
+      <script>
+    // ===== MOBILE MENU =====
+    function toggleMenu() {
+        var navbar = document.getElementById("myNavbar");
+        var icon = document.getElementById("menu-icon");
+        
+        navbar.classList.toggle("active");
+        
+        if (navbar.classList.contains("active")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-times");
+        } else {
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+        }
+    }
+
+    function closeMenu() {
+        var navbar = document.getElementById("myNavbar");
+        var icon = document.getElementById("menu-icon");
+        
+        navbar.classList.remove("active");
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+    }
+
+    // ===== CLEAR FORM WHEN PAGE LOADS (Back button safety) =====
+    window.addEventListener('pageshow', function() {
+        const form = document.getElementById('contactForm');
+        if (form) form.reset();
+    });
+
+    // ===== CONTACT FORM SUBMISSION =====
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const originalText = '<i class="fas fa-paper-plane"></i> <span>Send Message</span>';
+            
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            const formData = new FormData(contactForm);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    // ✅ SUCCESS - Show success message
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                    submitBtn.style.backgroundColor = '#10b981';
+                    
+                    // Clear the form immediately
+                    contactForm.reset();
+                    document.querySelector('input[name="name"]').value = '';
+                    document.querySelector('input[name="email"]').value = '';
+                    document.querySelector('textarea[name="message"]').value = '';
+                    
+                    // Remove focus so browser doesn't autofill
+                    if (document.activeElement) {
+                        document.activeElement.blur();
+                    }
+                    
+                    // ⏱️ After 3 seconds, reset the button to normal
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.style.backgroundColor = '';
+                    }, 3000);
+                    
+                } else {
+                    throw new Error('Failed');
+                }
+            } catch (error) {
+                // ❌ ERROR
+                submitBtn.innerHTML = '<i class="fas fa-times"></i> Failed. Try Again.';
+                submitBtn.style.backgroundColor = '#ef4444';
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.backgroundColor = '';
+                }, 3000);
+            }
+        });
+    }
+</script>
+  
+    
+</body>
+</html>
